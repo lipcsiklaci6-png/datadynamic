@@ -29,16 +29,16 @@ export default function MacOSMockup() {
       className="w-full bg-white rounded-2xl shadow-[0_40px_100px_-20px_rgba(10,37,64,0.2)] overflow-hidden border border-[#0A2540]/10 flex flex-col"
     >
       {/* MacOS Title Bar */}
-      <div className="bg-[#F3F3F3] px-5 py-3 border-b border-[#0A2540]/5 flex items-center justify-between">
-        <div className="flex gap-2">
-          <div className="w-3 h-3 rounded-full bg-[#FF5F56] shadow-inner" />
-          <div className="w-3 h-3 rounded-full bg-[#FFBD2E] shadow-inner" />
-          <div className="w-3 h-3 rounded-full bg-[#27C93F] shadow-inner" />
+      <div className="bg-[#F3F3F3] px-3 sm:px-5 py-2 sm:py-3 border-b border-[#0A2540]/5 flex items-center justify-between">
+        <div className="flex gap-1.5 sm:gap-2 shrink-0">
+          <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#FF5F56] shadow-inner" />
+          <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#FFBD2E] shadow-inner" />
+          <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#27C93F] shadow-inner" />
         </div>
-        <div className="text-[9px] font-bold text-[#0A2540]/40 tracking-[0.3em] uppercase">
+        <div className="text-[7px] sm:text-[9px] font-bold text-[#0A2540]/40 tracking-[0.1em] sm:tracking-[0.3em] uppercase truncate px-2">
           Audit Core V2 — Data Refinery
         </div>
-        <div className="w-10" />
+        <div className="w-8 sm:w-10 shrink-0" />
       </div>
 
       {/* Main Content */}
@@ -51,12 +51,12 @@ export default function MacOSMockup() {
           </div>
 
           {/* Messy Excel Table */}
-          <div className="flex-1 border border-gray-100 rounded-lg overflow-x-auto bg-[#FBFBFB] shadow-sm">
-            <table className="min-w-[320px] sm:min-w-[400px] xl:min-w-0 w-full text-[9px] sm:text-[10px] font-mono text-left border-collapse">
+          <div className="flex-1 border border-gray-100 rounded-lg overflow-x-auto bg-[#FBFBFB] shadow-sm custom-scrollbar">
+            <table className="min-w-full text-[9px] sm:text-[10px] font-mono text-left border-collapse">
               <thead className="bg-gray-50 border-b border-gray-100">
                 <tr>
                   {["Verbrauch", "Menge", "Einheit", "Lieferant", "Kostenstelle"].map((h) => (
-                    <th key={h} className="px-3 py-2 text-gray-400 font-bold">{h}</th>
+                    <th key={h} className="px-3 py-2 text-gray-400 font-bold whitespace-nowrap">{h}</th>
                   ))}
                 </tr>
               </thead>
@@ -87,15 +87,15 @@ export default function MacOSMockup() {
 
           {/* Warning Message */}
           <div className="mt-6 bg-red-50 border border-red-100 p-4 rounded-xl flex items-start gap-3">
-             <span className="text-lg">⚠️</span>
+             <span className="text-base sm:text-lg">⚠️</span>
              <div className="flex flex-col">
-                <span className="text-[11px] font-bold text-red-600">47 sor karanténban</span>
-                <span className="text-[9px] text-red-400 font-mono">Code: UnknownHeader, RangeGuardFail</span>
+                <span className="text-[10px] sm:text-[11px] font-bold text-red-600">47 sor karanténban</span>
+                <span className="text-[8px] sm:text-[9px] text-red-400 font-mono">Code: UnknownHeader, RangeGuardFail</span>
              </div>
           </div>
 
           <div className="mt-auto pt-6 flex justify-center">
-            <span className="text-[11px] font-black text-red-500 uppercase tracking-tighter bg-red-50 px-4 py-1.5 rounded-full border border-red-200">
+            <span className="text-[10px] sm:text-[11px] font-black text-red-500 uppercase tracking-tight bg-red-50 px-4 py-1.5 rounded-full border border-red-200 whitespace-nowrap">
                ADATMINŐSÉG: KRITIKUS
             </span>
           </div>
@@ -113,25 +113,25 @@ export default function MacOSMockup() {
           </div>
 
           <div className="space-y-1">
-            <h3 className="text-[#D4AF37] font-black text-lg leading-tight tracking-tight">BIG4 READY AUDIT PACKAGE</h3>
-            <p className="text-[10px] font-bold text-[#0A2540]/40 uppercase tracking-widest">15 verifikált fájl • CRC32 Validated</p>
+            <h3 className="text-[#D4AF37] font-black text-base sm:text-lg leading-tight tracking-tight">BIG4 READY AUDIT PACKAGE</h3>
+            <p className="text-[8px] sm:text-[10px] font-bold text-[#0A2540]/40 uppercase tracking-widest">15 verifikált fájl • CRC32 Validated</p>
           </div>
 
           {/* File Grid */}
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             {[
               "00_Manifest.json", "01_GHG_Inventar.xlsx",
               "02_Scope_Breakdown.xlsx", "03_Audit_Trail_Master.xlsx",
               "04_Quarantine_Log.xlsx", "METHODOLOGY.md",
               "ESEF_Report.xhtml", "Manifest.sig"
             ].map((file) => (
-              <div key={file} className="bg-white border border-[#0A2540]/5 rounded-lg px-3 py-2.5 flex items-center justify-between group hover:border-[#D4AF37]/30 transition-all shadow-sm">
+              <div key={file} className="bg-white border border-[#0A2540]/5 rounded-lg px-3 py-2 flex sm:py-2.5 items-center justify-between group hover:border-[#D4AF37]/30 transition-all shadow-sm">
                 <div className="flex items-center gap-2 overflow-hidden">
-                  <IconFile className="text-[#D4AF37] shrink-0" />
-                  <span className="text-[9px] font-bold text-[#0A2540]/70 truncate">{file}</span>
+                  <IconFile className="text-[#D4AF37] shrink-0 w-3 h-3 sm:w-3.5 sm:h-3.5" />
+                  <span className="text-[8px] sm:text-[9px] font-bold text-[#0A2540]/70 truncate">{file}</span>
                 </div>
-                <div className="w-4 h-4 rounded-full bg-green-50 flex items-center justify-center border border-green-100">
-                   <IconCheck className="text-green-500" />
+                <div className="w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full bg-green-50 flex items-center justify-center border border-green-100 shrink-0">
+                   <IconCheck className="text-green-500 w-2.5 h-2.5 sm:w-3 sm:h-3" />
                 </div>
               </div>
             ))}
@@ -139,28 +139,30 @@ export default function MacOSMockup() {
 
           {/* SHA-256 Hash Chain */}
           <div className="space-y-2.5">
-            <div className="flex items-center gap-2 text-[9px] font-black text-[#0A2540]/30 uppercase tracking-widest">
+            <div className="flex items-center gap-2 text-[8px] sm:text-[9px] font-black text-[#0A2540]/30 uppercase tracking-widest">
               <IconLink /> SHA-256 Audit Lánc
             </div>
-            <div className="flex items-center gap-1.5 overflow-hidden">
-              {["a7f2", "9c1b", "4d8e", "f0a3"].map((hash, i) => (
-                <div key={i} className="flex items-center gap-1.5">
-                  <div className="bg-[#0A2540] text-white px-2 py-1 rounded flex items-center gap-1.5 shadow-md">
-                    <span className="text-[8px] font-mono opacity-80">{hash}</span>
-                    <IconCheck className="w-2 h-2 text-[#D4AF37]" />
+            <div className="flex items-center gap-1.5 overflow-hidden flex-wrap">
+              <div className="flex items-center gap-1.5">
+                {["a7f2", "9c1b", "4d8e", "f0a3"].map((hash, i) => (
+                  <div key={i} className="flex items-center gap-1.5">
+                    <div className="bg-[#0A2540] text-white px-2 py-1 rounded flex items-center gap-1.5 shadow-md">
+                      <span className="text-[7px] sm:text-[8px] font-mono opacity-80">{hash}</span>
+                      <IconCheck className="w-2 h-2 text-[#D4AF37]" />
+                    </div>
+                    {i < 3 && <div className="w-1 sm:w-1.5 h-[1px] bg-[#0A2540]/20" />}
                   </div>
-                  {i < 3 && <div className="w-1.5 h-[1px] bg-[#0A2540]/20" />}
-                </div>
-              ))}
-              <div className="flex-1 bg-[#D4AF37] text-[#0A2540] px-3 py-1 rounded font-black text-[8px] shadow-lg whitespace-nowrap">
+                ))}
+              </div>
+              <div className="bg-[#D4AF37] text-[#0A2540] px-2 sm:px-3 py-1 rounded font-black text-[7px] sm:text-[8px] shadow-lg whitespace-nowrap">
                 MASTER HASH: VERIFIED
               </div>
             </div>
           </div>
 
           {/* Triage Engine Flow */}
-          <div className="bg-white/50 border border-[#0A2540]/5 rounded-2xl p-5 space-y-4">
-             <div className="text-[9px] font-black text-[#0A2540]/30 uppercase tracking-widest">Triage Engine Flow</div>
+          <div className="bg-white/50 border border-[#0A2540]/5 rounded-2xl p-4 sm:p-5 space-y-4">
+             <div className="text-[8px] sm:text-[9px] font-black text-[#0A2540]/30 uppercase tracking-widest">Triage Engine Flow</div>
              <div className="flex items-center justify-between gap-1">
                 {[
                   { label: "Raw Header", color: "bg-gray-100" },
@@ -168,9 +170,9 @@ export default function MacOSMockup() {
                   { label: "AI Validation", color: "bg-[#D4AF37]/20" },
                   { label: "Final Category", color: "bg-[#0A2540] text-white" }
                 ].map((step, i) => (
-                  <div key={i} className="flex flex-1 items-center gap-1">
-                    <div className={`flex-1 ${step.color} py-1.5 rounded flex items-center justify-center border border-black/5`}>
-                      <span className="text-[7px] font-bold text-center leading-none px-1">{step.label}</span>
+                  <div key={i} className="flex flex-1 items-center gap-0.5 sm:gap-1">
+                    <div className={`flex-1 ${step.color} py-1 sm:py-1.5 rounded flex items-center justify-center border border-black/5`}>
+                      <span className="text-[6px] sm:text-[7px] font-bold text-center leading-none px-0.5">{step.label}</span>
                     </div>
                     {i < 3 && <IconArrowRight />}
                   </div>
@@ -179,7 +181,7 @@ export default function MacOSMockup() {
           </div>
 
           <div className="mt-auto pt-6 flex justify-center">
-            <span className="text-[11px] font-black text-green-600 uppercase tracking-tighter bg-green-50 px-4 py-1.5 rounded-full border border-green-200 shadow-sm flex items-center gap-2">
+            <span className="text-[10px] sm:text-[11px] font-black text-green-600 uppercase tracking-tight bg-green-50 px-4 py-1.5 rounded-full border border-green-200 shadow-sm flex items-center gap-2 whitespace-nowrap">
                <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
                ADATMINŐSÉG: AUDIT-READY
             </span>
@@ -191,7 +193,7 @@ export default function MacOSMockup() {
       </div>
 
       {/* Status Footer */}
-      <div className="bg-[#0A2540] px-4 sm:px-8 py-3 flex flex-col sm:flex-row justify-between items-center gap-2 text-white/40 text-[7px] sm:text-[8px] font-black uppercase tracking-[0.2em] sm:tracking-[0.4em]">
+      <div className="bg-[#0A2540] px-4 sm:px-8 py-3 flex flex-col sm:flex-row justify-between items-center gap-2 text-white/40 text-[7px] sm:text-[8px] font-black uppercase tracking-[0.15em] sm:tracking-[0.4em]">
         <div className="flex gap-4 sm:gap-6">
           <span className="text-[#D4AF37]">Targoo Engine V2: Online</span>
           <span>Security: SHA-256</span>

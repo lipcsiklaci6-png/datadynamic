@@ -38,7 +38,7 @@ export default function SecurityPrivacy() {
 
   return (
     <section id="security" className="py-24 bg-[#F9FAFB] border-y border-[#0A2540]/5">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ export default function SecurityPrivacy() {
           <div className="w-20 h-1 bg-[#D4AF37] mx-auto rounded-full" />
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6 md:gap-8">
           {cards.map((card, i) => (
             <motion.div
               key={i}
@@ -59,7 +59,7 @@ export default function SecurityPrivacy() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="bg-white p-8 rounded-2xl shadow-sm border border-[#0A2540]/5 hover:shadow-md transition-shadow group"
+              className="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-[#0A2540]/5 hover:shadow-md transition-shadow group"
             >
               <div className="w-12 h-12 bg-[#0A2540]/5 rounded-xl flex items-center justify-center text-[#D4AF37] mb-6 group-hover:bg-[#0A2540] group-hover:text-white transition-colors">
                 {card.icon}

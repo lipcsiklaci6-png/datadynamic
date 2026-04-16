@@ -88,11 +88,11 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen selection:bg-[#D4AF37]/30 scroll-smooth text-[#0A2540] overflow-x-hidden">
+    <div className="min-h-screen selection:bg-[#D4AF37]/30 scroll-smooth text-[#0A2540] overflow-x-clip">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-[#F8F8F8]/80 backdrop-blur-md border-b border-[#0A2540]/5">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
-          <a href="#hero" className="relative w-32 md:w-40 h-8 md:h-10">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between gap-2">
+          <a href="#hero" className="relative w-28 md:w-40 h-8 md:h-10 shrink-0">
             <Image 
               src="/logo.svg" 
               alt="DataDynamic Logo" 
@@ -101,15 +101,15 @@ export default function Home() {
               priority
             />
           </a>
-          <div className="hidden md:flex gap-8 text-sm font-medium text-[#0A2540]/70">
+          <div className="hidden lg:flex gap-8 text-sm font-medium text-[#0A2540]/70">
             <a href="#problem" className="hover:text-[#0A2540] transition-colors">{tNav('problem')}</a>
             <a href="#megoldas" className="hover:text-[#0A2540] transition-colors">{tNav('solution')}</a>
             <a href="#security" className="hover:text-[#0A2540] transition-colors">{tNav('security')}</a>
             <a href="#kimenet" className="hover:text-[#0A2540] transition-colors">{tNav('output')}</a>
             <a href="#founder" className="hover:text-[#0A2540] transition-colors">{tNav('founder')}</a>
           </div>
-          <div className="flex items-center gap-6">
-             <div className="text-[10px] font-bold text-[#0A2540]/40 flex gap-2">
+          <div className="flex items-center gap-3 sm:gap-6">
+             <div className="text-[10px] font-bold text-[#0A2540]/40 flex gap-2 sm:gap-3">
                 {['en', 'de', 'hu'].map((l) => (
                   <button
                     key={l}
@@ -122,7 +122,7 @@ export default function Home() {
              </div>
              <a 
               href="#kapcsolat" 
-              className="text-sm font-bold bg-[#0A2540] text-white px-5 py-2 rounded-full hover:bg-[#0A2540]/90 transition-all"
+              className="text-[11px] sm:text-sm font-bold bg-[#0A2540] text-white px-3 sm:px-5 py-2 rounded-full hover:bg-[#0A2540]/90 transition-all whitespace-nowrap"
             >
               {tNav('contact')}
             </a>
@@ -131,7 +131,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section - Split Screen */}
-      <section id="hero" className="pt-24 xl:pt-32 pb-16 xl:pb-24 px-4 sm:px-6 bg-[#F8F8F8]">
+      <section id="hero" className="pt-24 xl:pt-32 pb-16 xl:pb-24 px-4 sm:px-6 bg-[#F8F8F8] overflow-hidden">
         <div className="max-w-7xl mx-auto grid xl:grid-cols-2 gap-12 xl:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -165,14 +165,14 @@ export default function Home() {
           
           <div className="relative">
              <MacOSMockup />
-             <div className="absolute -z-10 -top-20 -right-20 w-64 h-64 bg-[#D4AF37]/5 rounded-full blur-3xl" />
+             <div className="absolute -z-10 -top-20 -right-10 sm:-right-20 w-64 h-64 bg-[#D4AF37]/5 rounded-full blur-3xl" />
           </div>
         </div>
       </section>
 
       {/* Problem Section */}
       <section id="problem" className="py-24 bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <motion.div 
               viewport={{ once: true }}
@@ -198,7 +198,7 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div 
-              className="relative p-8 bg-[#F8F8F8] rounded-3xl border border-[#0A2540]/5"
+              className="relative p-6 sm:p-8 bg-[#F8F8F8] rounded-3xl border border-[#0A2540]/5"
               viewport={{ once: true }}
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -212,14 +212,14 @@ export default function Home() {
                   <motion.div 
                     animate={{ opacity: [0.5, 1, 0.5] }}
                     transition={{ duration: 2, repeat: Infinity }}
-                    className="text-xs font-mono text-red-500 bg-red-50 px-2 py-1 rounded"
+                    className="text-[10px] sm:text-xs font-mono text-red-500 bg-red-50 px-2 py-1 rounded"
                   >
                     ERROR: MAPPING_FAILED
                   </motion.div>
                   <motion.div 
                     animate={{ opacity: [1, 0.5, 1] }}
                     transition={{ duration: 2, repeat: Infinity, delay: 1 }}
-                    className="text-xs font-mono text-red-500 bg-red-50 px-2 py-1 rounded"
+                    className="text-[10px] sm:text-xs font-mono text-red-500 bg-red-50 px-2 py-1 rounded"
                   >
                     SCOPE_3_GAP
                   </motion.div>
@@ -233,12 +233,12 @@ export default function Home() {
       </section>
 
       {/* Solution Section (Megoldás) */}
-      <section id="megoldas" className="py-32 bg-[#F8F8F8]">
-        <div className="max-w-7xl mx-auto px-6 text-center">
+      <section id="megoldas" className="py-24 sm:py-32 bg-[#F8F8F8]">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
           <motion.div 
             viewport={{ once: true }}
             {...fadeIn}
-            className="mb-20"
+            className="mb-12 sm:mb-20"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[#0A2540] mb-4">{tSolution('title')}</h2>
             <p className="text-[#0A2540]/70">{tSolution('subtitle')}</p>
@@ -247,12 +247,12 @@ export default function Home() {
           <div className="relative max-w-4xl mx-auto">
             <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#0A2540]/10 to-transparent -translate-y-1/2 hidden md:block" />
 
-            <div className="grid md:grid-cols-3 gap-12 items-center relative z-10">
+            <div className="grid md:grid-cols-3 gap-8 sm:gap-12 items-center relative z-10">
               <motion.div 
                 viewport={{ once: true }}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                className="bg-white p-10 rounded-[2rem] shadow-sm border border-[#0A2540]/5"
+                className="bg-white p-8 sm:p-10 rounded-[2rem] shadow-sm border border-[#0A2540]/5"
               >
                 <div className="mb-6 relative">
                    <IconDatabase className="w-12 h-12 text-[#0A2540]/20 mx-auto" />
@@ -272,7 +272,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                className="bg-[#0A2540] p-12 rounded-[3rem] shadow-2xl text-white relative overflow-hidden group"
+                className="bg-[#0A2540] p-10 sm:p-12 rounded-[2rem] sm:rounded-[3rem] shadow-2xl text-white relative overflow-hidden group"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-[#0A2540] to-[#1a3d5f]" />
                 <motion.div 
@@ -299,7 +299,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                className="bg-white p-10 rounded-[2rem] shadow-sm border border-[#0A2540]/5"
+                className="bg-white p-8 sm:p-10 rounded-[2rem] shadow-sm border border-[#0A2540]/5"
               >
                 <div className="mb-6">
                   <IconFileCheck className="w-12 h-12 text-[#D4AF37] mx-auto" />
@@ -315,8 +315,8 @@ export default function Home() {
       <SecurityPrivacy />
 
       {/* Output Section (Kimenet) */}
-      <section id="kimenet" className="py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
+      <section id="kimenet" className="py-24 sm:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0A2540] mb-4">{tOutput('title')}</h2>
             <p className="text-[#0A2540]/70">{tOutput('subtitle')}</p>
@@ -333,7 +333,7 @@ export default function Home() {
               <motion.div 
                 key={i}
                 variants={fadeIn}
-                className="group p-8 rounded-2xl bg-[#F8F8F8] hover:bg-[#0A2540] transition-all duration-500 border border-[#0A2540]/5"
+                className="group p-6 sm:p-8 rounded-2xl bg-[#F8F8F8] hover:bg-[#0A2540] transition-all duration-500 border border-[#0A2540]/5"
               >
                 <div className="text-[#D4AF37] mb-6 group-hover:scale-110 transition-transform">
                   <IconCheck />
@@ -347,13 +347,13 @@ export default function Home() {
       </section>
 
       {/* Founder Section (Alapító) */}
-      <section id="founder" className="py-32 bg-[#F8F8F8]">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="bg-white rounded-[3rem] p-10 md:p-16 shadow-sm border border-[#0A2540]/5 flex flex-col md:flex-row gap-12 md:gap-20 items-center md:items-start">
+      <section id="founder" className="py-24 sm:py-32 bg-[#F8F8F8]">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          <div className="bg-white rounded-[2rem] sm:rounded-[3rem] p-6 sm:p-10 md:p-16 shadow-sm border border-[#0A2540]/5 flex flex-col md:flex-row gap-10 md:gap-20 items-center md:items-start">
             <motion.div 
               viewport={{ once: true }}
               {...fadeIn}
-              className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shrink-0 border-4 border-white shadow-2xl relative group"
+              className="w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full overflow-hidden shrink-0 border-4 border-white shadow-2xl relative group"
             >
                {!imageError ? (
                  <Image 
@@ -372,10 +372,10 @@ export default function Home() {
               viewport={{ once: true }}
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              className="flex-1"
+              className="flex-1 text-center md:text-left"
             >
               <span className="text-[#D4AF37] font-bold text-xs tracking-[0.2em] uppercase mb-4 block">{tFounder('badge')}</span>
-              <div className="flex items-center gap-4 mb-2">
+              <div className="flex flex-col md:flex-row items-center gap-4 mb-2">
                 <h2 className="text-3xl md:text-4xl font-black text-[#0A2540]">{tFounder('name')}</h2>
                 <a 
                   href={linkedinUrl}
@@ -387,7 +387,7 @@ export default function Home() {
                   <IconLinkedIn className="w-6 h-6" />
                 </a>
               </div>
-              <p className="text-lg font-bold text-[#0A2540]/60 mb-8">{tFounder('role')}</p>
+              <p className="text-lg font-bold text-[#0A2540]/60 mb-6 md:mb-8">{tFounder('role')}</p>
               
               <div className="prose prose-slate max-w-none">
                 {tFounder('description').split('\n\n').map((para, i) => (
@@ -397,9 +397,9 @@ export default function Home() {
                 ))}
               </div>
 
-              <div className="flex flex-wrap gap-3 mt-10">
+              <div className="flex flex-wrap justify-center md:justify-start gap-3 mt-10">
                  {['Audit-Ready CSRD', 'Scope 3 Reporting', 'CISL Cambridge'].map((tag, i) => (
-                   <div key={i} className="px-4 py-2 bg-[#F8F8F8] rounded-full text-[10px] font-black uppercase tracking-widest text-[#0A2540]/40 border border-[#0A2540]/5">
+                   <div key={i} className="px-3 sm:px-4 py-2 bg-[#F8F8F8] rounded-full text-[9px] sm:text-[10px] font-black uppercase tracking-widest text-[#0A2540]/40 border border-[#0A2540]/5">
                      {tag}
                    </div>
                  ))}
@@ -410,32 +410,32 @@ export default function Home() {
       </section>
 
       {/* Contact Section (Kapcsolat) */}
-      <section id="kapcsolat" className="py-32 bg-[#0A2540] text-white overflow-hidden relative">
+      <section id="kapcsolat" className="py-24 sm:py-32 bg-[#0A2540] text-white overflow-hidden relative">
         <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(#D4AF37 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
         
-        <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 text-center relative z-10">
           <motion.div 
             viewport={{ once: true }}
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">{tContact('title')}</h2>
-            <p className="text-white/60 mb-12 text-lg max-w-xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8">{tContact('title')}</h2>
+            <p className="text-white/60 mb-10 sm:mb-12 text-base sm:text-lg max-w-xl mx-auto">
               {tContact('subtitle')}
             </p>
             
             <div className="flex flex-col items-center gap-8">
-              <div className="flex flex-col sm:flex-row items-center gap-4">
+              <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
                 <a 
                   href={`mailto:${email}`} 
-                  className="inline-flex items-center gap-3 bg-[#D4AF37] text-[#0A2540] px-10 py-5 rounded-full font-bold text-xl hover:scale-105 transition-transform shadow-2xl"
+                  className="inline-flex items-center justify-center gap-3 bg-[#D4AF37] text-[#0A2540] px-6 sm:px-10 py-4 sm:py-5 rounded-full font-bold text-lg sm:text-xl hover:scale-105 transition-transform shadow-2xl w-full sm:w-auto overflow-hidden text-ellipsis"
                 >
-                  {email}
+                  <span className="truncate">{email}</span>
                 </a>
                 
                 <button 
                   onClick={copyEmail}
-                  className="p-5 rounded-full border-2 border-white/10 hover:bg-white/5 transition-all group relative"
+                  className="p-4 sm:p-5 rounded-full border-2 border-white/10 hover:bg-white/5 transition-all group relative"
                   title="Copy to clipboard"
                 >
                   <IconCopy />
@@ -474,14 +474,14 @@ export default function Home() {
                 {tContact('linkedin')}
               </a>
 
-              <p className="text-white/40 text-sm">{tContact('response_time')}</p>
+              <p className="text-white/40 text-[10px] sm:text-sm uppercase tracking-widest font-bold">{tContact('response_time')}</p>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-12 border-t border-[#0A2540]/5 px-6 bg-white">
+      <footer className="py-12 border-t border-[#0A2540]/5 px-4 md:px-6 bg-white">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="relative w-32 h-8">
             <Image 
