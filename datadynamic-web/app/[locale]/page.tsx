@@ -6,6 +6,7 @@ import Image from "next/image";
 import MacOSMockup from "@/components/MacOSMockup";
 import SecurityPrivacy from "@/components/SecurityPrivacy";
 import { useTranslations, useLocale } from "next-intl";
+import { useRouter, usePathname } from "@/i18n/navigation";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -59,7 +60,11 @@ const UserPlaceholder = () => (
 export default function Home() {
   const [copied, setCopied] = useState(false);
   const [imageError, setImageError] = useState(false);
+  
   const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+
   const tNav = useTranslations('nav');
   const tHero = useTranslations('hero');
   const tProblem = useTranslations('problem');
@@ -79,12 +84,11 @@ export default function Home() {
   };
 
   const switchLanguage = (newLocale: string) => {
-    document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000`;
-    window.location.reload();
+    router.replace(pathname, { locale: newLocale as any });
   };
 
   return (
-    <div className="min-h-screen selection:bg-[#D4AF37]/30 scroll-smooth">
+    <div className="min-h-screen selection:bg-[#D4AF37]/30 scroll-smooth text-[#0A2540]">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-[#F8F8F8]/80 backdrop-blur-md border-b border-[#0A2540]/5">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
