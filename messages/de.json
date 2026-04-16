@@ -29,7 +29,7 @@
     "subtitle": "Chaos in prüfbereite Assets standardisieren.",
     "input": "Input",
     "input_desc": "Unordentliche CSV, ERP-Exporte, Excel-Silos",
-    "engine": "DataDynamic",
+    "engine": "Data Dynamic",
     "engine_badge": "Raffinerie-Engine",
     "output": "Output",
     "output_desc": "Audit-Bereites Paket",
@@ -60,7 +60,7 @@
     "badge": "Der Architekt",
     "name": "László Lipcsik",
     "role": "ESG Data Process Architect",
-    "description": "CSRD und ESRS E1 haben eine neue Ära in der Unternehmensberichterstattung eingeleitet, aber die Dateninfrastruktur der meisten Unternehmen steckt noch in der Vergangenheit fest. Meine Arbeit schließt diese Lücke. Als Data Engineer und ESG-Experte transformiere ich rohe, unstrukturierte Unternehmensdatenströme (ERP, CSV, Lieferanten-Dumps) in prüfungssichere, Big4-kompatible Berichts-Pakete.\n\nWährend meines Studiums in Cambridge (CISL) – ESG Risk Management, Business Sustainability Management und Sustainable Finance – lernte ich die strategische und finanzielle Seite der Nachhaltigkeit kennen. Die Kombination dieses Wissens mit meiner technischen Ader (Rust, Datenmodellierung) ermöglicht den Betrieb einer deterministischen Datenraffinerie-Engine, der DataDynamic Refinery, die alles von Scope 1-3 Emissionen bis hin zu finanzierten Emissionen gemäß PCAF 2025 abdeckt, während sie die Integrität des Audit-Trails durch SHA-256-Verkettung und digitale Signaturen garantiert.\n\nIn Zusammenarbeit mit Boutique-Beratungen im deutschsprachigen Markt ist es meine Mission, ihnen die Last der ESG-Datenverarbeitung abzunehmen und fertige, validierte Datenpakete zu liefern, die ihre Kunden sofort abzeichnen können. Die Daten gehören mir, die Entscheidung ihnen.",
+    "description": "CSRD und ESRS E1 haben eine neue Ära in der Unternehmensberichterstattung eingeleitet, aber die Dateninfrastruktur der meisten Unternehmen steckt noch in der Vergangenheit fest. Meine Arbeit schließt diese Lücke. Als Data Engineer und ESG-Experte transformiere ich rohe, unstrukturierte Unternehmensdatenströme (ERP, CSV, Lieferanten-Dumps) in prüfungssichere, Big4-kompatible Berichts-Pakete.\n\nWährend meines Studiums in Cambridge (CISL) – ESG Risk Management, Business Sustainability Management und Sustainable Finance – lernte ich die strategische und finanzielle Seite der Nachhaltigkeit kennen. Die Kombination dieses Wissens mit meiner technischen Ader (Rust, Datenmodellierung) ermöglicht den Betrieb einer deterministischen Datenraffinerie-Engine, der Data Dynamic Refinery, die alles von Scope 1-3 Emissionen bis hin zu finanzierten Emissionen gemäß PCAF 2025 abdeckt, während sie die Integrität des Audit-Trails durch SHA-256-Verkettung und digitale Signaturen garantiert.\n\nIn Zusammenarbeit mit Boutique-Beratungen im deutschsprachigen Markt ist es meine Mission, ihnen die Last der ESG-Datenverarbeitung abzunehmen und fertige, validierte Datenpakete zu liefern, die ihre Kunden sofort abzeichnen können. Die Daten gehören mir, die Entscheidung ihnen.",
     "tags": ["Audit-Ready CSRD", "Scope 3 Reporting"]
   },
   "contact": {

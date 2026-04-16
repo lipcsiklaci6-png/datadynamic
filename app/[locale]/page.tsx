@@ -95,7 +95,7 @@ export default function Home() {
           <a href="#hero" className="relative w-32 md:w-40 h-8 md:h-10 shrink-0">
             <Image 
               src="/logo.svg" 
-              alt="DataDynamic Logo" 
+              alt="Data Dynamic Logo" 
               fill
               className="object-contain object-left"
               priority
@@ -487,13 +487,13 @@ export default function Home() {
           <div className="relative w-32 h-8">
             <Image 
               src="/logo.svg" 
-              alt="DataDynamic Logo" 
+              alt="Data Dynamic Logo" 
               fill
               className="object-contain object-left grayscale opacity-50"
             />
           </div>
           <div className="text-sm text-[#0A2540]/40">
-            © {new Date().getFullYear()} DataDynamic. All rights reserved.
+            © {new Date().getFullYear()} Data Dynamic. All rights reserved.
           </div>
           <div className="flex gap-6">
             <a href="#" className="text-[#0A2540]/40 hover:text-[#0A2540] transition-colors">

@@ -29,7 +29,7 @@
     "subtitle": "A káosz szabványosítása audit-kész eszközökké.",
     "input": "Bemenet",
     "input_desc": "Zavaros CSV, ERP exportok, Excel silók",
-    "engine": "DataDynamic",
+    "engine": "Data Dynamic",
     "engine_badge": "Finomító Motor",
     "output": "Kimenet",
     "output_desc": "Audit-Ready Csomag",
@@ -60,7 +60,7 @@
     "badge": "Alapító",
     "name": "Lipcsik László",
     "role": "ESG Data Process Architect",
-    "description": "A CSRD és az ESRS E1 új korszakot nyitott a vállalati jelentéstételben, de a legtöbb cég adatinfrastruktúrája még mindig a múltban ragadt. Az én munkám ezt a szakadékot hidalja át. Data Engineerként és ESG szakértőként a nyers, strukturálatlan vállalati adatfolyamokat (ERP, CSV, beszállítói dumpok) alakítom át audit-biztos, Big4-kompatibilis jelentéscsomagokká.\n\nCambridge-i (CISL) tanulmányaim során – ESG Risk Management, Business Sustainability Management és Sustainable Finance – a fenntarthatóság stratégiai és pénzügyi oldalát ismerhettem meg. Ez a tudás a technikai vénámmal (Rust, adatmodellezés) ötvözve tesz lehetővé egy olyan determinisztikus adatfinomító motor, a DataDynamic Refinery működtetését, ami a Scope 1-3 kibocsátásoktól a PCAF 2025 szerinti finanszírozott emissziókig mindent lefed, miközben SHA-256 lánccal és digitális aláírással garantálja az audit-trail integritását.\n\nA német ajkú piac butik tanácsadóival együttműködve az a küldetésem, hogy az ESG-adatok feldolgozásának terhét levegyem a vállukról, és olyan kész, validált adatcsomagokat adjak a kezükbe, amire az ügyfeleik azonnal ráüthetik a pecsétet. Az adat az enyém, a döntés az övék.",
+    "description": "A CSRD és az ESRS E1 új korszakot nyitott a vállalati jelentéstételben, de a legtöbb cég adatinfrastruktúrája még mindig a múltban ragadt. Az én munkám ezt a szakadékot hidalja át. Data Engineerként és ESG szakértőként a nyers, strukturálatlan vállalati adatfolyamokat (ERP, CSV, beszállítói dumpok) alakítom át audit-biztos, Big4-kompatibilis jelentéscsomagokká.\n\nCambridge-i (CISL) tanulmányaim során – ESG Risk Management, Business Sustainability Management és Sustainable Finance – a fenntarthatóság stratégiai és pénzügyi oldalát ismerhettem meg. Ez a tudás a technikai vénámmal (Rust, adatmodellezés) ötvözve tesz lehetővé egy olyan determinisztikus adatfinomító motor, a Data Dynamic Refinery működtetését, ami a Scope 1-3 kibocsátásoktól a PCAF 2025 szerinti finanszírozott emissziókig mindent lefed, miközben SHA-256 lánccal és digitális aláírással garantálja az audit-trail integritását.\n\nA német ajkú piac butik tanácsadóival együttműködve az a küldetésem, hogy az ESG-adatok feldolgozásának terhét levegyem a vállukról, és olyan kész, validált adatcsomagokat adjak a kezükbe, amire az ügyfeleik azonnal ráüthetik a pecsétet. Az adat az enyém, a döntés az övék.",
     "tags": ["Audit-Ready CSRD", "Scope 3 Reporting"]
   },
   "contact": {

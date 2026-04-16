@@ -13,7 +13,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "DataDynamic | Audit-Ready ESG Data Refinery",
+  title: "Data Dynamic | Audit-Ready ESG Data Refinery",
   description: "Audit-Ready ESG Data Refinery for Global Consultancies",
   icons: {
     icon: "/favicon.svg",
