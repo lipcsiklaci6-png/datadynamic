@@ -2,6 +2,7 @@
   "nav": {
     "problem": "Problem",
     "solution": "Refinerie",
+    "security": "Sicherheit",
     "output": "Paket",
     "founder": "Gründer",
     "contact": "Kontakt"
@@ -33,6 +34,15 @@
     "output": "Output",
     "output_desc": "Audit-Bereites Paket",
     "after": "NACHHER: Audit-Ready"
+  },
+  "security": {
+    "title": "Ihre Daten, vollständig geschützt.",
+    "card1_title": "Zero-Trust-Verarbeitung",
+    "card1_desc": "Ihre Daten verlassen nie Ihre Kontrolle. Die Verarbeitung erfolgt auf den von Ihnen bereitgestellten Dateien, und das fertige Berichtspaket wird direkt an Sie geliefert.",
+    "card2_title": "Prüferechte Chain of Custody",
+    "card2_desc": "Jede Datenzeile wird durch eine kryptografische SHA-256-Kette gesichert. Dieser unveränderliche Integritätsbeweis wird von Big4-Prüfern akzeptiert.",
+    "card3_title": "Keine Datenspeicherung",
+    "card3_desc": "Nach Abschluss werden alle Rohdaten und Zwischendateien dauerhaft und automatisch gelöscht. Nur das fertige, prüfungsbereite Paket bleibt erhalten."
   },
   "output": {
     "title": "Big4 Ready Audit Package",

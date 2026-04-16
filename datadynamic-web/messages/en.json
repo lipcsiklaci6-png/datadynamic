@@ -2,6 +2,7 @@
   "nav": {
     "problem": "Problem",
     "solution": "Refinery",
+    "security": "Security",
     "output": "Package",
     "founder": "Founder",
     "contact": "Contact"
@@ -33,6 +34,15 @@
     "output": "Output",
     "output_desc": "Audit-Ready Package",
     "after": "AFTER: Audit-Ready"
+  },
+  "security": {
+    "title": "Your Data, Fully Protected.",
+    "card1_title": "Zero-Trust Processing",
+    "card1_desc": "Your data never leaves your control. Processing occurs on the files you provide, and the final report package is delivered directly to you.",
+    "card2_title": "Audit-Proof Chain of Custody",
+    "card2_desc": "Every data row is secured by an SHA-256 cryptographic chain. This immutable proof of integrity is accepted by Big4 auditors.",
+    "card3_title": "No Data Retention",
+    "card3_desc": "Upon completion, all raw data and intermediate files are permanently and automatically purged. Only the final, audit-ready package remains."
   },
   "output": {
     "title": "Big4 Ready Audit Package",

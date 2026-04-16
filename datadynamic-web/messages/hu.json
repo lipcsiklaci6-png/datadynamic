@@ -2,6 +2,7 @@
   "nav": {
     "problem": "Probléma",
     "solution": "Finomító",
+    "security": "Biztonság",
     "output": "Csomag",
     "founder": "Alapító",
     "contact": "Kapcsolat"
@@ -33,6 +34,15 @@
     "output": "Kimenet",
     "output_desc": "Audit-Ready Csomag",
     "after": "UTÁNA: Audit-Ready"
+  },
+  "security": {
+    "title": "Az Ön adatai teljes biztonságban.",
+    "card1_title": "Zero-Trust Feldolgozás",
+    "card1_desc": "Az adatai soha nem hagyják el az Ön felügyeletét. A feldolgozás az Ön által biztosított fájlokon történik, és a végleges jelentéscsomag közvetlenül Önhöz kerül.",
+    "card2_title": "Audit-biztos Életút (Chain of Custody)",
+    "card2_desc": "Minden egyes adatsort SHA-256 kriptográfiai lánc véd. Ez a megváltoztathatatlan integritási bizonyíték a Big4 auditorok által is elfogadott.",
+    "card3_title": "Nincs Adattárolás",
+    "card3_desc": "A befejezés után minden nyers adat és köztes fájl véglegesen és automatikusan törlésre kerül. Csak a végleges, audit-kész csomag marad meg."
   },
   "output": {
     "title": "Big4 Ready Audit Csomag",

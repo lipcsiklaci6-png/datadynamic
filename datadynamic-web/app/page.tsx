@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import Image from "next/image";
 import MacOSMockup from "@/components/MacOSMockup";
+import SecurityPrivacy from "@/components/SecurityPrivacy";
 import { useTranslations, useLocale } from "next-intl";
 
 const fadeIn = {
@@ -99,6 +100,7 @@ export default function Home() {
           <div className="hidden md:flex gap-8 text-sm font-medium text-[#0A2540]/70">
             <a href="#problem" className="hover:text-[#0A2540] transition-colors">{tNav('problem')}</a>
             <a href="#megoldas" className="hover:text-[#0A2540] transition-colors">{tNav('solution')}</a>
+            <a href="#security" className="hover:text-[#0A2540] transition-colors">{tNav('security')}</a>
             <a href="#kimenet" className="hover:text-[#0A2540] transition-colors">{tNav('output')}</a>
             <a href="#founder" className="hover:text-[#0A2540] transition-colors">{tNav('founder')}</a>
           </div>
@@ -305,6 +307,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <SecurityPrivacy />
 
       {/* Output Section (Kimenet) */}
       <section id="kimenet" className="py-32 bg-white">
