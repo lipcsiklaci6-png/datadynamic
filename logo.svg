@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(20, 10)">
+    <!-- Data Stream (Input) -->
+    <rect x="0" y="15" width="22" height="7" rx="3.5" fill="#D4AF37" />
+    <rect x="0" y="37" width="22" height="7" rx="3.5" fill="#D4AF37" opacity="0.8" />
+    <rect x="0" y="59" width="22" height="7" rx="3.5" fill="#D4AF37" opacity="0.6" />
+    
+    <!-- The Refinery (Stylized D) -->
+    <path d="M 28 0 C 88 0 88 80 28 80 V 62 C 65 62 65 18 28 18 V 0 Z" fill="#0A2540" />
+    
+    <!-- The Refined Output -->
+    <rect x="76" y="34" width="12" height="12" rx="2" fill="#D4AF37" transform="rotate(45 82 40)" />
+  </g>
+  
+  <!-- Branding Text -->
+  <text x="130" y="66" font-family="'DM Sans', sans-serif" font-weight="700" font-size="44" fill="#0A2540">
+    Data<tspan fill="#D4AF37">Dynamic</tspan>
+  </text>
+</svg>
