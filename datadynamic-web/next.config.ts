@@ -6,7 +6,7 @@ const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: '/datadynamic',
+  basePath: process.env.NODE_ENV === 'production' ? '/datadynamic-pages' : '',
   images: {
     unoptimized: true,
   },

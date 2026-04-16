@@ -77,6 +77,8 @@ export default function Home() {
   const phone = "+36303849691";
   const linkedinUrl = "https://www.linkedin.com/in/l%C3%A1szl%C3%B3-lipcsik-158932403/";
 
+  const basePath = process.env.NODE_ENV === 'production' ? '/datadynamic-pages' : '';
+
   const copyEmail = () => {
     navigator.clipboard.writeText(email);
     setCopied(true);
@@ -94,7 +96,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <a href="#hero" className="relative w-40 h-10">
             <Image 
-              src="/logo.svg" 
+              src={`${basePath}/logo.svg`} 
               alt="DataDynamic Logo" 
               fill
               className="object-contain object-left"
@@ -357,7 +359,7 @@ export default function Home() {
             >
                {!imageError ? (
                  <Image 
-                   src="../../images/Founder.png" 
+                   src={`${basePath}/images/Founder.png`} 
                    alt={tFounder('name')}
                    fill
                    className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -485,7 +487,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="relative w-32 h-8">
             <Image 
-              src="/datadynamic/logo.svg" 
+              src={`${basePath}/logo.svg`} 
               alt="DataDynamic Logo" 
               fill
               className="object-contain object-left grayscale opacity-50"
