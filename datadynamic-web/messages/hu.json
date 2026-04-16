@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "problem": "Probléma",
+    "solution": "Finomító",
+    "output": "Csomag",
+    "founder": "Alapító",
+    "contact": "Kapcsolat"
+  },
+  "hero": {
+    "badge": "Audit-Ready Precizitás",
+    "title": "Audit-biztos ESG adatfinomítás tanácsadó cégeknek",
+    "subtitle": "Növelje tanácsadói praxisát anélkül, hogy elveszne a táblázatok tengerében. A nyers vállalati adatokat hitelesítésre kész, Big4-kompatibilis jelentéscsomaggá formáljuk.",
+    "cta_primary": "Kapcsolatfelvétel",
+    "cta_secondary": "A folyamat"
+  },
+  "problem": {
+    "title": "Az ügyfeleid ERP adatai kaotikusak. A CSRD határidők közelednek.",
+    "items": [
+      "Inkonzisztens CSV/Excel fájlok több osztálytól.",
+      "Manuális adatleképezés, ami felemészti a számlázható órákat.",
+      "Hiányzó Scope 3 kalkulációk és PCAF megfeleltetés.",
+      "A sikertelen auditok állandó kockázata a nyomonkövethetőség hiánya miatt."
+    ],
+    "before": "ELŐTTE: Adatkáosz"
+  },
+  "solution": {
+    "title": "Az Adatfinomító",
+    "subtitle": "A káosz szabványosítása audit-kész eszközökké.",
+    "input": "Bemenet",
+    "input_desc": "Zavaros CSV, ERP exportok, Excel silók",
+    "engine": "DataDynamic",
+    "engine_badge": "Finomító Motor",
+    "output": "Kimenet",
+    "output_desc": "Audit-Ready Csomag",
+    "after": "UTÁNA: Audit-Ready"
+  },
+  "output": {
+    "title": "Big4 Ready Audit Csomag",
+    "subtitle": "Teljesen dokumentált, nyomon követhető és készen áll a harmadik fél általi igazolásra.",
+    "items": [
+      { "title": "Scope 1-3 GHG Leltár", "desc": "Granuláris kibocsátási számítások a GHG Protokollhoz illesztve." },
+      { "title": "PCAF 2025 Szabvány", "desc": "Pénzügyi szolgáltatások összehangolása a finanszírozott kibocsátásokhoz." },
+      { "title": "ESRS E1 Gap Analízis", "desc": "Teljes felkészültségi értékelés a CSRD jelentéstételhez." },
+      { "title": "LkSG Megfelelőség", "desc": "Ellátási lánc átvilágítási dokumentáció." },
+      { "title": "iXBRL-Kész Exportok", "desc": "Címkézett és digitális benyújtásra kész adatok." },
+      { "title": "Módszertani Napló", "desc": "Egyértelmű audit trail minden egyes adatponthoz." }
+    ]
+  },
+  "founder": {
+    "badge": "Alapító",
+    "name": "Lipcsik László",
+    "role": "ESG Data Process Architect",
+    "description": "A CSRD és az ESRS E1 új korszakot nyitott a vállalati jelentéstételben, de a legtöbb cég adatinfrastruktúrája még mindig a múltban ragadt. Az én munkám ezt a szakadékot hidalja át. Data Engineerként és ESG szakértőként a nyers, strukturálatlan vállalati adatfolyamokat (ERP, CSV, beszállítói dumpok) alakítom át audit-biztos, Big4-kompatibilis jelentéscsomagokká.\n\nCambridge-i (CISL) tanulmányaim során – ESG Risk Management, Business Sustainability Management és Sustainable Finance – a fenntarthatóság stratégiai és pénzügyi oldalát ismerhettem meg. Ez a tudás a technikai vénámmal (Rust, adatmodellezés) ötvözve tesz lehetővé egy olyan determinisztikus adatfinomító motor, a DataDynamic Refinery működtetését, ami a Scope 1-3 kibocsátásoktól a PCAF 2025 szerinti finanszírozott emissziókig mindent lefed, miközben SHA-256 lánccal és digitális aláírással garantálja az audit-trail integritását.\n\nA német ajkú piac butik tanácsadóival együttműködve az a küldetésem, hogy az ESG-adatok feldolgozásának terhét levegyem a vállukról, és olyan kész, validált adatcsomagokat adjak a kezükbe, amire az ügyfeleik azonnal ráüthetik a pecsétet. Az adat az enyém, a döntés az övék.",
+    "tags": ["Audit-Ready CSRD", "Scope 3 Reporting"]
+  },
+  "contact": {
+    "title": "Készen állsz egy CSRD-konform auditra?",
+    "subtitle": "Vedd fel velünk a kapcsolatot, hogy megbeszéljük, hogyan alakíthatjuk át tanácsadód munkafolyamatait.",
+    "phone": "+36 30 384 9691",
+    "linkedin": "Kapcsolódás LinkedInen",
+    "response_time": "Általában 24 órán belül válaszolunk",
+    "copied": "Másolva!"
+  }
+}
