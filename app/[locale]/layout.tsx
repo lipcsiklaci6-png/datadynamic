@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { DM_Sans } from "next/font/google";
 import "../globals.css";
 import { NextIntlClientProvider } from 'next-intl';
@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.svg",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export function generateStaticParams() {

@@ -88,11 +88,11 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen selection:bg-[#D4AF37]/30 scroll-smooth text-[#0A2540]">
+    <div className="min-h-screen selection:bg-[#D4AF37]/30 scroll-smooth text-[#0A2540] overflow-x-hidden">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-[#F8F8F8]/80 backdrop-blur-md border-b border-[#0A2540]/5">
-        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <a href="#hero" className="relative w-40 h-10">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
+          <a href="#hero" className="relative w-32 md:w-40 h-8 md:h-10">
             <Image 
               src="/logo.svg" 
               alt="DataDynamic Logo" 
@@ -131,20 +131,20 @@ export default function Home() {
       </nav>
 
       {/* Hero Section - Split Screen */}
-      <section id="hero" className="pt-32 pb-24 px-6 bg-[#F8F8F8]">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <section id="hero" className="pt-24 lg:pt-32 pb-16 lg:pb-24 px-6 bg-[#F8F8F8]">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block px-4 py-1.5 rounded-full bg-[#D4AF37]/10 text-[#D4AF37] text-xs font-bold tracking-widest uppercase mb-6">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-[#D4AF37]/10 text-[#D4AF37] text-[10px] md:text-xs font-bold tracking-widest uppercase mb-6">
               {tHero('badge')}
             </span>
-            <h1 className="text-4xl md:text-6xl font-bold text-[#0A2540] leading-[1.1] mb-8">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#0A2540] leading-[1.1] mb-6 md:mb-8">
               {tHero('title')}
             </h1>
-            <p className="text-xl text-[#0A2540]/70 mb-10 leading-relaxed max-w-xl">
+            <p className="text-lg md:text-xl text-[#0A2540]/70 mb-8 md:mb-10 leading-relaxed max-w-xl">
               {tHero('subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">

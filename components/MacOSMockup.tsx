@@ -51,8 +51,8 @@ export default function MacOSMockup() {
           </div>
 
           {/* Messy Excel Table */}
-          <div className="flex-1 border border-gray-100 rounded-lg overflow-hidden bg-[#FBFBFB] shadow-sm">
-            <table className="w-full text-[10px] font-mono text-left border-collapse">
+          <div className="flex-1 border border-gray-100 rounded-lg overflow-x-auto bg-[#FBFBFB] shadow-sm">
+            <table className="min-w-[400px] lg:min-w-0 w-full text-[10px] font-mono text-left border-collapse">
               <thead className="bg-gray-50 border-b border-gray-100">
                 <tr>
                   {["Verbrauch", "Menge", "Einheit", "Lieferant", "Kostenstelle"].map((h) => (
