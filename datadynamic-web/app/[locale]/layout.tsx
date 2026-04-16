@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "DataDynamic | Audit-Ready ESG Data Refinery",
   description: "Audit-Ready ESG Data Refinery for Global Consultancies",
   icons: {
-    icon: "/datadynamic/favicon.svg",
+    icon: "/favicon.svg",
   },
 };
 

@@ -7,7 +7,9 @@ const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
   basePath: '/datadynamic',
-  assetPrefix: '/datadynamic',
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default withNextIntl(nextConfig);
