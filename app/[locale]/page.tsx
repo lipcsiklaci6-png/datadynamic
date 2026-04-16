@@ -88,11 +88,11 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen selection:bg-[#D4AF37]/30 scroll-smooth text-[#0A2540] overflow-x-clip">
+    <div className="min-h-screen selection:bg-[#D4AF37]/30 scroll-smooth text-[#0A2540] overflow-x-hidden">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-[#F8F8F8]/80 backdrop-blur-md border-b border-[#0A2540]/5">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between gap-2">
-          <a href="#hero" className="relative w-28 md:w-40 h-8 md:h-10 shrink-0">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 h-16 flex items-center justify-between gap-2">
+          <a href="#hero" className="relative w-24 sm:w-28 md:w-40 h-8 md:h-10 shrink-0">
             <Image 
               src="/logo.svg" 
               alt="DataDynamic Logo" 
@@ -131,7 +131,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section - Split Screen */}
-      <section id="hero" className="pt-24 xl:pt-32 pb-16 xl:pb-24 px-4 sm:px-6 bg-[#F8F8F8] overflow-hidden">
+      <section id="hero" className="pt-24 xl:pt-32 pb-16 xl:pb-24 px-3 sm:px-6 bg-[#F8F8F8] overflow-hidden">
         <div className="max-w-7xl mx-auto grid xl:grid-cols-2 gap-12 xl:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -141,7 +141,7 @@ export default function Home() {
             <span className="inline-block px-4 py-1.5 rounded-full bg-[#D4AF37]/10 text-[#D4AF37] text-[10px] md:text-xs font-bold tracking-widest uppercase mb-6">
               {tHero('badge')}
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#0A2540] leading-[1.1] mb-6 md:mb-8">
+            <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold text-[#0A2540] leading-[1.1] mb-6 md:mb-8">
               {tHero('title')}
             </h1>
             <p className="text-lg md:text-xl text-[#0A2540]/70 mb-8 md:mb-10 leading-relaxed max-w-xl">

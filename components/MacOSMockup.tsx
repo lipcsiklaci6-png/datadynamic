@@ -52,7 +52,7 @@ export default function MacOSMockup() {
 
           {/* Messy Excel Table */}
           <div className="flex-1 border border-gray-100 rounded-lg overflow-x-auto bg-[#FBFBFB] shadow-sm custom-scrollbar">
-            <table className="min-w-full text-[9px] sm:text-[10px] font-mono text-left border-collapse">
+            <table className="min-w-[280px] text-[9px] sm:text-[10px] font-mono text-left border-collapse">
               <thead className="bg-gray-50 border-b border-gray-100">
                 <tr>
                   {["Verbrauch", "Menge", "Einheit", "Lieferant", "Kostenstelle"].map((h) => (
@@ -95,7 +95,7 @@ export default function MacOSMockup() {
           </div>
 
           <div className="mt-auto pt-6 flex justify-center">
-            <span className="text-[10px] sm:text-[11px] font-black text-red-500 uppercase tracking-tight bg-red-50 px-4 py-1.5 rounded-full border border-red-200 whitespace-nowrap">
+            <span className="text-[9px] sm:text-[11px] font-black text-red-500 uppercase tracking-tight bg-red-50 px-4 py-1.5 rounded-full border border-red-200 whitespace-nowrap">
                ADATMINŐSÉG: KRITIKUS
             </span>
           </div>
@@ -143,7 +143,7 @@ export default function MacOSMockup() {
               <IconLink /> SHA-256 Audit Lánc
             </div>
             <div className="flex items-center gap-1.5 overflow-hidden flex-wrap">
-              <div className="flex items-center gap-1.5">
+              <div className="flex items-center gap-1.5 flex-wrap">
                 {["a7f2", "9c1b", "4d8e", "f0a3"].map((hash, i) => (
                   <div key={i} className="flex items-center gap-1.5">
                     <div className="bg-[#0A2540] text-white px-2 py-1 rounded flex items-center gap-1.5 shadow-md">
@@ -181,7 +181,7 @@ export default function MacOSMockup() {
           </div>
 
           <div className="mt-auto pt-6 flex justify-center">
-            <span className="text-[10px] sm:text-[11px] font-black text-green-600 uppercase tracking-tight bg-green-50 px-4 py-1.5 rounded-full border border-green-200 shadow-sm flex items-center gap-2 whitespace-nowrap">
+            <span className="text-[9px] sm:text-[11px] font-black text-green-600 uppercase tracking-tight bg-green-50 px-4 py-1.5 rounded-full border border-green-200 shadow-sm flex items-center gap-2 whitespace-nowrap">
                <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
                ADATMINŐSÉG: AUDIT-READY
             </span>
