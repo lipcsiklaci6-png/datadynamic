@@ -485,7 +485,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="relative w-32 h-8">
             <Image 
-              src="/logo.svg" 
+              src="/datadynamic/logo.svg" 
               alt="DataDynamic Logo" 
               fill
               className="object-contain object-left grayscale opacity-50"
