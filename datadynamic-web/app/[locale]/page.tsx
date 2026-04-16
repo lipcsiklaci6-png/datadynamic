@@ -357,7 +357,7 @@ export default function Home() {
             >
                {!imageError ? (
                  <Image 
-                   src="/images/Founder.png" 
+                   src="../../images/Founder.png" 
                    alt={tFounder('name')}
                    fill
                    className="object-cover transition-transform duration-700 group-hover:scale-110"
