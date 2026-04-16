@@ -77,7 +77,7 @@ export default function Home() {
   const phone = "+36303849691";
   const linkedinUrl = "https://www.linkedin.com/in/l%C3%A1szl%C3%B3-lipcsik-158932403/";
 
-  const basePath = process.env.NODE_ENV === 'production' ? '/datadynamic-pages' : '';
+  const basePath = process.env.NODE_ENV === 'production' ? '/datadynamic' : '';
 
   const copyEmail = () => {
     navigator.clipboard.writeText(email);
