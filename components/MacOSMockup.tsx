@@ -55,7 +55,7 @@ export default function MacOSMockup() {
             <table className="min-w-[280px] text-[9px] sm:text-[10px] font-mono text-left border-collapse">
               <thead className="bg-gray-50 border-b border-gray-100">
                 <tr>
-                  {["Verbrauch", "Menge", "Einheit", "Lieferant", "Kostenstelle"].map((h) => (
+                  {["Consumption", "Quantity", "Unit", "Supplier", "Cost Center"].map((h) => (
                     <th key={h} className="px-3 py-2 text-gray-400 font-bold whitespace-nowrap">{h}</th>
                   ))}
                 </tr>
@@ -89,14 +89,14 @@ export default function MacOSMockup() {
           <div className="mt-6 bg-red-50 border border-red-100 p-4 rounded-xl flex items-start gap-3">
              <span className="text-base sm:text-lg">⚠️</span>
              <div className="flex flex-col">
-                <span className="text-[10px] sm:text-[11px] font-bold text-red-600">47 sor karanténban</span>
+                <span className="text-[10px] sm:text-[11px] font-bold text-red-600">47 rows quarantined</span>
                 <span className="text-[8px] sm:text-[9px] text-red-400 font-mono">Code: UnknownHeader, RangeGuardFail</span>
              </div>
           </div>
 
           <div className="mt-auto pt-6 flex justify-center">
             <span className="text-[10px] sm:text-[11px] font-black text-red-500 uppercase tracking-tight bg-red-50 px-4 py-1.5 rounded-full border border-red-200 text-center">
-               ADATMINŐSÉG: KRITIKUS
+               DATA QUALITY: CRITICAL
             </span>
           </div>
           
@@ -111,7 +111,7 @@ export default function MacOSMockup() {
 
           <div className="space-y-1">
             <h3 className="text-[#D4AF37] font-black text-base sm:text-lg leading-tight tracking-tight">BIG4 READY AUDIT PACKAGE</h3>
-            <p className="text-[8px] sm:text-[10px] font-bold text-[#0A2540]/40 uppercase tracking-widest">15 verifikált fájl • CRC32 Validated</p>
+            <p className="text-[8px] sm:text-[10px] font-bold text-[#0A2540]/40 uppercase tracking-widest">15 verified files • CRC32 Validated</p>
           </div>
 
           {/* File Grid */}
@@ -137,7 +137,7 @@ export default function MacOSMockup() {
           {/* SHA-256 Hash Chain */}
           <div className="space-y-2.5">
             <div className="flex items-center gap-2 text-[8px] sm:text-[9px] font-black text-[#0A2540]/30 uppercase tracking-widest">
-              <IconLink /> SHA-256 Audit Lánc
+              <IconLink /> SHA-256 Audit Chain
             </div>
             <div className="flex items-center gap-1.5 overflow-hidden flex-wrap">
               <div className="flex items-center gap-1.5 flex-wrap">
@@ -180,7 +180,7 @@ export default function MacOSMockup() {
           <div className="mt-auto pt-6 flex justify-center">
             <span className="text-[10px] sm:text-[11px] font-black text-green-600 uppercase tracking-tight bg-green-50 px-4 py-1.5 rounded-full border border-green-200 shadow-sm flex items-center gap-2 text-center">
                <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
-               ADATMINŐSÉG: AUDIT-READY
+               DATA QUALITY: AUDIT-READY
             </span>
           </div>
 
@@ -193,7 +193,7 @@ export default function MacOSMockup() {
       <div className="bg-[#0A2540] px-4 sm:px-8 py-3 flex flex-col sm:flex-row justify-between items-center gap-2 text-white/40 text-[10px] sm:text-[11px] font-black uppercase tracking-[0.15em] sm:tracking-[0.4em]">
         <div className="flex gap-4 sm:gap-6">
           <span className="text-[#D4AF37]">Targoo Engine V2: Online</span>
-          <span>Security: SHA-256</span>
+          <span>Security: SHA-256/AES-256</span>
         </div>
         <div className="flex gap-4">
            <span className="hidden sm:inline">Block Height: 842.102</span>
