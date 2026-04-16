@@ -141,22 +141,22 @@ export default function Home() {
             <span className="inline-block px-4 py-1.5 rounded-full bg-[#D4AF37]/10 text-[#D4AF37] text-[10px] md:text-xs font-bold tracking-widest uppercase mb-6">
               {tHero('badge')}
             </span>
-            <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold text-[#0A2540] leading-[1.1] mb-6 md:mb-8">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-[#0A2540] leading-[1.1] mb-6 md:mb-8">
               {tHero('title')}
             </h1>
-            <p className="text-lg md:text-xl text-[#0A2540]/70 mb-8 md:mb-10 leading-relaxed max-w-xl">
+            <p className="text-lg md:text-xl text-[#0A2540]/70 mb-8 md:mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0">
               {tHero('subtitle')}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <a 
                 href="#kapcsolat"
-                className="px-10 py-4 bg-[#0A2540] text-white rounded-full font-bold flex items-center justify-center gap-2 hover:translate-y-[-2px] transition-all shadow-lg shadow-[#0A2540]/10"
+                className="w-full sm:w-auto px-10 py-4 bg-[#0A2540] text-white rounded-full font-bold flex items-center justify-center gap-2 hover:translate-y-[-2px] transition-all shadow-lg shadow-[#0A2540]/10"
               >
                 {tHero('cta_primary')} <IconArrowRight />
               </a>
               <a 
                 href="#megoldas"
-                className="px-10 py-4 border-2 border-[#0A2540]/10 text-[#0A2540] rounded-full font-bold hover:bg-[#0A2540]/5 transition-all"
+                className="w-full sm:w-auto px-10 py-4 border-2 border-[#0A2540]/10 text-[#0A2540] rounded-full font-bold flex items-center justify-center hover:bg-[#0A2540]/5 transition-all"
               >
                 {tHero('cta_secondary')}
               </a>
@@ -368,14 +368,14 @@ export default function Home() {
                )}
             </motion.div>
             
-            <motion.div 
+            <motion.div
               viewport={{ once: true }}
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              className="flex-1 text-center md:text-left"
+              className="flex-1 text-center lg:text-left"
             >
               <span className="text-[#D4AF37] font-bold text-xs tracking-[0.2em] uppercase mb-4 block">{tFounder('badge')}</span>
-              <div className="flex flex-col md:flex-row items-center gap-4 mb-2">
+              <div className="flex flex-col lg:flex-row items-center gap-4 mb-2">
                 <h2 className="text-3xl md:text-4xl font-black text-[#0A2540]">{tFounder('name')}</h2>
                 <a 
                   href={linkedinUrl}
@@ -391,13 +391,13 @@ export default function Home() {
               
               <div className="prose prose-slate max-w-none">
                 {tFounder('description').split('\n\n').map((para, i) => (
-                  <p key={i} className="text-[#0A2540]/80 leading-relaxed mb-6 text-justify">
+                  <p key={i} className="text-[#0A2540]/80 leading-relaxed mb-6 text-center lg:text-justify">
                     {para}
                   </p>
                 ))}
               </div>
 
-              <div className="flex flex-wrap justify-center md:justify-start gap-3 mt-10">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-3 mt-10">
                  {['Audit-Ready CSRD', 'Scope 3 Reporting', 'CISL Cambridge'].map((tag, i) => (
                    <div key={i} className="px-3 sm:px-4 py-2 bg-[#F8F8F8] rounded-full text-[9px] sm:text-[10px] font-black uppercase tracking-widest text-[#0A2540]/40 border border-[#0A2540]/5">
                      {tag}
