@@ -91,7 +91,7 @@ export default function Home() {
     <div className="min-h-screen selection:bg-[#D4AF37]/30 scroll-smooth text-[#0A2540] overflow-x-hidden">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-[#F8F8F8]/80 backdrop-blur-md border-b border-[#0A2540]/5">
-        <div className="max-w-7xl mx-auto px-3 sm:px-6 h-16 flex items-center justify-between gap-2">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between gap-2">
           <a href="#hero" className="relative w-24 sm:w-28 md:w-40 h-8 md:h-10 shrink-0">
             <Image 
               src="/logo.svg" 
@@ -109,7 +109,7 @@ export default function Home() {
             <a href="#founder" className="hover:text-[#0A2540] transition-colors">{tNav('founder')}</a>
           </div>
           <div className="flex items-center gap-3 sm:gap-6">
-             <div className="text-[10px] font-bold text-[#0A2540]/40 flex gap-2 sm:gap-3">
+             <div className="text-[12px] font-bold text-[#0A2540]/40 flex gap-2 sm:gap-3">
                 {['en', 'de', 'hu'].map((l) => (
                   <button
                     key={l}
@@ -122,7 +122,7 @@ export default function Home() {
              </div>
              <a 
               href="#kapcsolat" 
-              className="text-[11px] sm:text-sm font-bold bg-[#0A2540] text-white px-3 sm:px-5 py-2 rounded-full hover:bg-[#0A2540]/90 transition-all whitespace-nowrap"
+              className="text-[12px] sm:text-sm font-bold bg-[#0A2540] text-white px-3 sm:px-5 py-2 rounded-full hover:bg-[#0A2540]/90 transition-all whitespace-nowrap"
             >
               {tNav('contact')}
             </a>
@@ -131,12 +131,13 @@ export default function Home() {
       </nav>
 
       {/* Hero Section - Split Screen */}
-      <section id="hero" className="pt-24 xl:pt-32 pb-16 xl:pb-24 px-3 sm:px-6 bg-[#F8F8F8] overflow-hidden">
-        <div className="max-w-7xl mx-auto grid xl:grid-cols-2 gap-12 xl:gap-16 items-center">
+      <section id="hero" className="pt-24 lg:pt-32 pb-16 lg:pb-24 px-3 sm:px-6 bg-[#F8F8F8] overflow-hidden">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
+            className="text-center lg:text-left"
           >
             <span className="inline-block px-4 py-1.5 rounded-full bg-[#D4AF37]/10 text-[#D4AF37] text-[10px] md:text-xs font-bold tracking-widest uppercase mb-6">
               {tHero('badge')}
@@ -144,10 +145,10 @@ export default function Home() {
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-[#0A2540] leading-[1.1] mb-6 md:mb-8 break-words max-w-full">
               {tHero('title')}
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-[#0A2540]/70 mb-8 md:mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0">
+            <p className="text-base sm:text-lg lg:text-xl text-[#0A2540]/70 mb-8 md:mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0">
               {tHero('subtitle')}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center lg:justify-start">
               <a 
                 href="#kapcsolat"
                 className="w-full sm:w-auto px-10 py-4 bg-[#0A2540] text-white rounded-full font-bold flex items-center justify-center gap-2 hover:translate-y-[-2px] transition-all shadow-lg shadow-[#0A2540]/10"
@@ -163,9 +164,9 @@ export default function Home() {
             </div>
           </motion.div>
           
-          <div className="relative">
+          <div className="relative overflow-hidden lg:overflow-visible p-1">
              <MacOSMockup />
-             <div className="absolute -z-10 -top-20 -right-10 sm:-right-20 w-64 h-64 bg-[#D4AF37]/5 rounded-full blur-3xl" />
+             <div className="absolute -z-10 -top-20 left-1/2 -translate-x-1/2 lg:left-auto lg:right-[-10%] lg:translate-x-0 w-64 h-64 bg-[#D4AF37]/5 rounded-full blur-3xl" />
           </div>
         </div>
       </section>

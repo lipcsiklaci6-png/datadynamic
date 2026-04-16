@@ -35,7 +35,7 @@ export default function MacOSMockup() {
           <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#FFBD2E] shadow-inner" />
           <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#27C93F] shadow-inner" />
         </div>
-        <div className="text-[7px] sm:text-[9px] font-bold text-[#0A2540]/40 tracking-[0.1em] sm:tracking-[0.3em] uppercase truncate px-2">
+        <div className="text-[10px] sm:text-[11px] font-bold text-[#0A2540]/40 tracking-[0.1em] sm:tracking-[0.3em] uppercase truncate px-2">
           Audit Core V2 — Data Refinery
         </div>
         <div className="w-8 sm:w-10 shrink-0" />
@@ -95,7 +95,7 @@ export default function MacOSMockup() {
           </div>
 
           <div className="mt-auto pt-6 flex justify-center">
-            <span className="text-[9px] sm:text-[11px] font-black text-red-500 uppercase tracking-tight bg-red-50 px-4 py-1.5 rounded-full border border-red-200 whitespace-nowrap">
+            <span className="text-[10px] sm:text-[11px] font-black text-red-500 uppercase tracking-tight bg-red-50 px-4 py-1.5 rounded-full border border-red-200 text-center">
                ADATMINŐSÉG: KRITIKUS
             </span>
           </div>
@@ -178,7 +178,7 @@ export default function MacOSMockup() {
           </div>
 
           <div className="mt-auto pt-6 flex justify-center">
-            <span className="text-[9px] sm:text-[11px] font-black text-green-600 uppercase tracking-tight bg-green-50 px-4 py-1.5 rounded-full border border-green-200 shadow-sm flex items-center gap-2 whitespace-nowrap">
+            <span className="text-[10px] sm:text-[11px] font-black text-green-600 uppercase tracking-tight bg-green-50 px-4 py-1.5 rounded-full border border-green-200 shadow-sm flex items-center gap-2 text-center">
                <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
                ADATMINŐSÉG: AUDIT-READY
             </span>
@@ -190,7 +190,7 @@ export default function MacOSMockup() {
       </div>
 
       {/* Status Footer */}
-      <div className="bg-[#0A2540] px-4 sm:px-8 py-3 flex flex-col sm:flex-row justify-between items-center gap-2 text-white/40 text-[7px] sm:text-[8px] font-black uppercase tracking-[0.15em] sm:tracking-[0.4em]">
+      <div className="bg-[#0A2540] px-4 sm:px-8 py-3 flex flex-col sm:flex-row justify-between items-center gap-2 text-white/40 text-[10px] sm:text-[11px] font-black uppercase tracking-[0.15em] sm:tracking-[0.4em]">
         <div className="flex gap-4 sm:gap-6">
           <span className="text-[#D4AF37]">Targoo Engine V2: Online</span>
           <span>Security: SHA-256</span>
