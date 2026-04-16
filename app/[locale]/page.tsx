@@ -141,10 +141,10 @@ export default function Home() {
             <span className="inline-block px-4 py-1.5 rounded-full bg-[#D4AF37]/10 text-[#D4AF37] text-[10px] md:text-xs font-bold tracking-widest uppercase mb-6">
               {tHero('badge')}
             </span>
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-[#0A2540] leading-[1.1] mb-6 md:mb-8">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-[#0A2540] leading-[1.1] mb-6 md:mb-8 break-words max-w-full">
               {tHero('title')}
             </h1>
-            <p className="text-lg md:text-xl text-[#0A2540]/70 mb-8 md:mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0">
+            <p className="text-base sm:text-lg md:text-xl text-[#0A2540]/70 mb-8 md:mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0">
               {tHero('subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">

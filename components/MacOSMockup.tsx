@@ -42,10 +42,10 @@ export default function MacOSMockup() {
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-col xl:flex-row min-h-0 xl:min-h-[600px]">
+      <div className="flex flex-col lg:flex-row min-h-0 lg:min-h-[600px]">
         
         {/* LEFT COLUMN: BEFORE (Data Chaos) */}
-        <div className="flex-1 p-4 sm:p-8 bg-white flex flex-col relative overflow-hidden">
+        <div className="flex-1 p-4 sm:p-8 bg-white flex flex-col relative overflow-hidden border-b lg:border-b-0 lg:border-r border-[#0A2540]/5">
           <div className="text-center mb-4 sm:mb-6">
             <span className="text-[10px] sm:text-[11px] font-extrabold text-[#0A2540]/30 uppercase tracking-widest">before</span>
           </div>
@@ -102,9 +102,6 @@ export default function MacOSMockup() {
           
           <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-white via-transparent to-transparent opacity-20" />
         </div>
-
-        {/* ELEGANT DIVIDER */}
-        <div className="hidden xl:block w-[1px] bg-[#E5E7EB] self-stretch" />
 
         {/* RIGHT COLUMN: AFTER (Big4 Ready Audit Package) */}
         <div className="flex-1 p-4 sm:p-8 bg-[#F8F8F8] flex flex-col gap-4 sm:gap-6 relative overflow-hidden">
