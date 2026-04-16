@@ -42,17 +42,17 @@ export default function MacOSMockup() {
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-col lg:flex-row min-h-[600px]">
+      <div className="flex flex-col xl:flex-row min-h-0 xl:min-h-[600px]">
         
         {/* LEFT COLUMN: BEFORE (Data Chaos) */}
-        <div className="flex-1 p-8 bg-white flex flex-col relative overflow-hidden">
-          <div className="text-center mb-6">
-            <span className="text-[11px] font-extrabold text-[#0A2540]/30 uppercase tracking-widest">before</span>
+        <div className="flex-1 p-4 sm:p-8 bg-white flex flex-col relative overflow-hidden">
+          <div className="text-center mb-4 sm:mb-6">
+            <span className="text-[10px] sm:text-[11px] font-extrabold text-[#0A2540]/30 uppercase tracking-widest">before</span>
           </div>
 
           {/* Messy Excel Table */}
           <div className="flex-1 border border-gray-100 rounded-lg overflow-x-auto bg-[#FBFBFB] shadow-sm">
-            <table className="min-w-[400px] lg:min-w-0 w-full text-[10px] font-mono text-left border-collapse">
+            <table className="min-w-[320px] sm:min-w-[400px] xl:min-w-0 w-full text-[9px] sm:text-[10px] font-mono text-left border-collapse">
               <thead className="bg-gray-50 border-b border-gray-100">
                 <tr>
                   {["Verbrauch", "Menge", "Einheit", "Lieferant", "Kostenstelle"].map((h) => (
@@ -104,12 +104,12 @@ export default function MacOSMockup() {
         </div>
 
         {/* ELEGANT DIVIDER */}
-        <div className="hidden lg:block w-[1px] bg-[#E5E7EB] self-stretch" />
+        <div className="hidden xl:block w-[1px] bg-[#E5E7EB] self-stretch" />
 
         {/* RIGHT COLUMN: AFTER (Big4 Ready Audit Package) */}
-        <div className="flex-1 p-8 bg-[#F8F8F8] flex flex-col gap-6 relative overflow-hidden">
+        <div className="flex-1 p-4 sm:p-8 bg-[#F8F8F8] flex flex-col gap-4 sm:gap-6 relative overflow-hidden">
           <div className="text-center">
-            <span className="text-[11px] font-extrabold text-[#0A2540]/30 uppercase tracking-widest">after</span>
+            <span className="text-[10px] sm:text-[11px] font-extrabold text-[#0A2540]/30 uppercase tracking-widest">after</span>
           </div>
 
           <div className="space-y-1">
@@ -191,13 +191,13 @@ export default function MacOSMockup() {
       </div>
 
       {/* Status Footer */}
-      <div className="bg-[#0A2540] px-8 py-3 flex justify-between items-center text-white/40 text-[8px] font-black uppercase tracking-[0.4em]">
-        <div className="flex gap-6">
-          <span className="text-[#D4AF37] group-hover:text-white transition-colors">Targoo Engine V2: Online</span>
-          <span>Security: SHA-256/AES-256</span>
+      <div className="bg-[#0A2540] px-4 sm:px-8 py-3 flex flex-col sm:flex-row justify-between items-center gap-2 text-white/40 text-[7px] sm:text-[8px] font-black uppercase tracking-[0.2em] sm:tracking-[0.4em]">
+        <div className="flex gap-4 sm:gap-6">
+          <span className="text-[#D4AF37]">Targoo Engine V2: Online</span>
+          <span>Security: SHA-256</span>
         </div>
         <div className="flex gap-4">
-           <span>Block Height: 842.102</span>
+           <span className="hidden sm:inline">Block Height: 842.102</span>
            <span className="text-white/80">Region: EU-Central-1</span>
         </div>
       </div>

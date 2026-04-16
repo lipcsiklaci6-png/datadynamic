@@ -131,8 +131,8 @@ export default function Home() {
       </nav>
 
       {/* Hero Section - Split Screen */}
-      <section id="hero" className="pt-24 lg:pt-32 pb-16 lg:pb-24 px-6 bg-[#F8F8F8]">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <section id="hero" className="pt-24 xl:pt-32 pb-16 xl:pb-24 px-4 sm:px-6 bg-[#F8F8F8]">
+        <div className="max-w-7xl mx-auto grid xl:grid-cols-2 gap-12 xl:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
