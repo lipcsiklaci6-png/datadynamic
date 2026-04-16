@@ -92,7 +92,7 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-[#F8F8F8]/80 backdrop-blur-md border-b border-[#0A2540]/5">
         <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between gap-2">
-          <a href="#hero" className="relative w-24 sm:w-28 md:w-40 h-8 md:h-10 shrink-0">
+          <a href="#hero" className="relative w-32 md:w-40 h-8 md:h-10 shrink-0">
             <Image 
               src="/logo.svg" 
               alt="DataDynamic Logo" 
